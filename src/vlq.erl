@@ -21,7 +21,7 @@ decode_acc(<<1:1, Val:7, T/binary>>, Res) ->
 % returns: the VLQ binary represetation of an unsigned integer
 encode(Int) ->
     Bin = binary:encode_unsigned(Int),
-    encode_acc(Bin, <<>>),
+    encode_acc(Bin, <<>>)
 .
 
 encode_acc(<<>>, Acc) ->
