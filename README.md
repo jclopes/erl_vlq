@@ -10,4 +10,4 @@ This erlang module implements functions to encode integer into VLQ and decode VL
   - Encode an integer
     - vlq:encode(integer()) -> binary()
   - Decode VLQ binary stream:
-    - vlq:decode(binary()) -> integer()
+    - vlq:decode(binary()) -> {integer(), binary()}
